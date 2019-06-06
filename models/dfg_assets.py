@@ -12,6 +12,8 @@ class DFGAssets:
     def load(self, path):
         self._io = open(path, 'rb')
         is_zip = IOHelper.peek(self._io, 1) == b'\x01'
+        if is_zip:
+            self._io.seek(1)
 
         self.assets.clear()
         [file_num] = IOHelper.read_format(self._io, '<i')
