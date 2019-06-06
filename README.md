@@ -1,6 +1,16 @@
 # DFGUnpack
 
+## How to Use
+
+* Install Python3 and execute below command.
+
+~~~bash
+python3 . "/xxx/assets.mp3"
+~~~
+
 ## Part 1 - Assets File
+
+The assets file have two format case.
 
 ### Normal Case
 

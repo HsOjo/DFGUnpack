@@ -34,6 +34,6 @@ def extract_packs(folder):
 
 os.makedirs(DIR_EXTRACT, exist_ok=True)
 path = ' '.join(sys.argv[1:])
-print(path)
+print('extracting %s...' % path)
 extract_assets(path, DIR_EXTRACT)
 extract_packs(DIR_EXTRACT)
